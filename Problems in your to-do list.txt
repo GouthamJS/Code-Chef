@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) 
+{
+	int n,t,count;
+	scanf("%d",&t);
+	for(int i=0;i<t;i++)
+	{
+	    scanf("%d",&n);
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        scanf("%d",&a[i]);
+	    }
+	    for(int i=0;i<n;i++)
+	    {
+	        if(a[i]>=1000)
+	        {
+	            count++;
+	        }
+	    }
+	    printf("%d\n",count);
+	    count=0;
+	    
+	}
+	return 0;
+}
